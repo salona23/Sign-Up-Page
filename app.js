@@ -31,10 +31,10 @@ app.post("/",function(req,res){
   }
   const jsondata = JSON.stringify(data);
 
-  url ="https://us18.api.mailchimp.com/3.0/lists/173b98caf9"
+  url ="https://usx.api.mailchimp.com/3.0/lists/152b98kaf7"
   options = {
     method:"POST",
-    auth:"salona:ca934bca5e311abb8b8db165bc821be6-us18"
+    auth:"salona:ca34ba5e311a8b8db165bc821be6-usx"
   }
 
 const  request = https.request(url,options,function(responce){
@@ -60,8 +60,3 @@ app.post("/failure",function(req,res){
 app.listen(process.env.PORT || 3000  ,function(){
 console.log("server is running ")
 });
-// APIKEY
-// ca934bca5e311abb8b8db165bc821be6-us18
-
-// LISTID
-// 173b98caf9
